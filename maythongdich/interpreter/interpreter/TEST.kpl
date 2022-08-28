@@ -1,0 +1,19 @@
+Program TEST;
+ Var SCORE : Integer;
+  Function CONVERT(SCORE : Integer) : CHAR;
+ Begin If SCORE = 10 Then CONVERT := 'A'
+   Else if SCORE = 9 Then CONVERT := 'A' 
+   Else if SCORE = 8 Then CONVERT := 'B'
+    Else if SCORE = 7 Then CONVERT := 'B' 
+    Else if SCORE = 6 Then CONVERT := 'C'
+     Else if SCORE = 5 Then CONVERT := 'D'
+     Else if SCORE = 4 Then CONVERT := 'D' 
+     Else if SCORE = 3 Then CONVERT := 'F' 
+     Else if SCORE = 2 Then CONVERT := 'F' 
+     Else if SCORE = 1 Then CONVERT := 'F'
+      Else if SCORE = 0 Then CONVERT := 'F' 
+End; 
+Begin
+    SCORE := READI; 
+    Call writec(CONVERT(SCORE));
+End.

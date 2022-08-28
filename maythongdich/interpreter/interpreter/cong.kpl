@@ -1,0 +1,4 @@
+PROGRAM CONG;
+var x:Integer;
+BEGIN
+END.

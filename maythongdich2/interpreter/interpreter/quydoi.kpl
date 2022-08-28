@@ -1,0 +1,18 @@
+Program Quydoidiem;
+Var x : Integer;
+
+Function F(x : Integer) : Char;
+    Begin
+        If x < 4 Then F := 'F'
+        Else If x < 5 Then F := 'D'
+        Else If x < 7 Then F := 'C'
+        Else If x < 9 Then F := 'B'
+        Else F := 'A';
+
+
+    End;    
+
+Begin
+    x := readI; 
+    call writeC(F(x));
+End.

@@ -1,0 +1,29 @@
+// tu mot so nguyen n cho truoc. neu n chan, chia so do cho 2
+//neu n le, nhan no voi 3 va cong voi 1
+// lap lai qua trinh nay voi moi gia tri moi cua n 
+//va ket thuc khi n = 1
+// vd: voi n=22 ta co day so sau
+// 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1
+// hay cai dat thuat toan bang kpl. cu the nhap vao so n va in so do ra man hinh
+PROGRAM BAI1;
+    VAR n : INTEGER;
+    PROCEDURE handle(a: INTEGER);
+        BEGIN
+            IF a = 1 THEN CALL WriteI(a)	//ifst
+            ELSE IF n - a/2*2 = 0 THEN	//ifst
+                BEGIN					//groupst 
+                    a := a/2;
+                    CALL WriteI(a);
+                    CALL handle(a);
+                END
+            ELSE
+                BEGIN		//groupst
+                    a := a*3 + 1;
+                    CALL WriteI(a);
+                    CALL handle(a);
+                END
+        END;
+    BEGIN
+        n := ReadI;
+        CALL handle(n);
+    END.

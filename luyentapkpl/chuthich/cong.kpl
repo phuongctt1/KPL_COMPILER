@@ -1,0 +1,14 @@
+PROGRAM cong;
+	VAR x : INTERGER;
+		y : INTERGER;
+	PROCEDURE handle(a: INTERGER);
+		BEGIN
+			a := x + y;
+			CALL WriteI(a);
+		END;
+
+	BEGIN
+		x := ReadI;
+		y := ReadI;
+		CALL handle(a);
+	END.

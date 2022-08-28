@@ -1,0 +1,42 @@
+PROGRAM  cong2;  (* cong 2 *)
+TYPE T = INTEGER;
+VAR  A : ARRAY(. 10 .) OF T;
+
+PROCEDURE INPUT;
+VAR I : INTEGER;
+    TMP : INTEGER;
+BEGIN
+  FOR I := 1 TO 2 DO
+     A(.I.) := READI;
+END;
+
+PROCEDURE OUTPUT;
+VAR I : INTEGER;
+BEGIN
+  FOR I := 1 TO 2 DO
+     BEGIN
+       CALL WRITEI(A(.I.));
+       CALL WRITELN;
+     END
+END;
+
+FUNCTION SUM : INTEGER;
+VAR I: INTEGER;
+    S : INTEGER;
+BEGIN
+    S := 0;
+    I := 1;
+    WHILE I <= 2 DO
+     BEGIN
+       S := S + A(.I.);
+       I := I + 1;
+     END
+END;
+
+BEGIN
+     BEGIN
+       CALL INPUT;
+       CALL OUTPUT;
+       CALL WRITEI(SUM);
+     END
+END.  (* cong 2 *)

@@ -1,0 +1,36 @@
+program Exp;
+var n : integer;
+procedure Add(a: Interger, b: Interger)
+Begin
+	N := a+b;
+End;
+begin
+	N:=10;
+	Call add(N,20*10);
+end.
+
+0 j 9 nhay den dong 9 (main chinh)
+1 j 2  // chuong trinh con bdau tu so 2
+2 INT 6 // dong dau tien la INT 6 vi co 4 con tro va 2 con so, tham so 1 o vi tri 0,4 ; tham so thu 2 o vi tri 0,5; 0 la do lech cua thang nay trong chinh no
+3 LA 1,4 // 1 la do lech muc la 1; 4 la bien N
+4 LC 0,4 // 0,4 la gia tri tham so A
+5 LV 0,5 // gia tri tham so B
+6 AD
+7 ST
+8 EP
+9 INT 5 // 4 tham so cua 1 bien
+10 LA 0,4 // do lech muc la 4 N
+11 LC 10
+12 ST
+13 INT 4 // tang con tro stack len 4 don vi la 4 cho danh cho 4 con tro cua chuong trinh con, sau do la vi tri con tro chuong trinh con do
+14 LV 0,4 // nap gia tri bien N nen dinh ngan xep
+15 LC 20  // nap 20 len dinh ngan xep
+16 LC 10 // 20 *10
+17 ML
+18 DCT 6 // giam di 6 don vi, con tro tro ve vi tri sau khi thuc hien cau len St 12
+19 CALL 0,1 //
+20 HL
+
+// khac LV 0,4 : 0 la bien cuc bo , 4 la do lech , bien cuc bo dua tren thanh ghi B hien tai
+// ST luu gia tri
+// LA 1, 4: so 1 cho biet day ko phai la bien cuc bo ma la 1 bien nam trong ban hoat dong cua chuong trinh con ra ben ngoai do 1 muc

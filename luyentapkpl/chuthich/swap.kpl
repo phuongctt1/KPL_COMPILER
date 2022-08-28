@@ -1,0 +1,8 @@
+// chuong trinh hoan doi 2 bien
+PROGRAM swap;
+VAR	x : INTERGER;
+	y : INTERGER;
+BEGIN
+	X,y := y,x; 
+
+END.

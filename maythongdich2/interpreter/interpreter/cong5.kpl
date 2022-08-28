@@ -1,0 +1,12 @@
+Program sum;
+Var X : Integer;
+    Y : Integer;
+    SUM: Integer;
+Begin
+    X := READI;
+    Y := READI;
+    Begin
+        SUM := X + Y;
+        call writei(SUM);
+    End;
+End.
